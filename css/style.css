@@ -1,0 +1,9 @@
+:root {
+  --background-card: #fff;
+  --background-learn: #f8f8f8;
+  --background-internal: #f3f4f5;
+  --box-shadow: 0 10px 29px rgba(0, 0, 0, 0.2);
+  --color-text: #172533;
+  --color-text-soft: #626e76;
+  --color-accent: #7c47c0;
+}
