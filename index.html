@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 4 - HTML & CSS</title>
 
-  <title>Challenge 4 - HTML & CSS </title>
+    <!-- ce css permet simplement de mettre en page la présentation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <!-- ce css permet simplement de mettre en page la présentation -->
-  <link rel="stylesheet" href="../css/presentation.css" />
+  <body>
+    <section class="learn">
+      <div class="card">
+        <div class="container">
+          <div class="title">
+            <h1>Je me connecte avec mes identifiants</h1>
+          </div>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css">
-</head>
+          <form action="" method="get" class="formulaire">
+            <div class="mail">
+              <label for="email">ADRESSE EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="chuck@norris.com"
+                required
+              />
+            </div>
 
-<body>
-  <section class="learn">
-    <div class="card">
-      <div class="title">
-        <h1>Je me connecte avec mes identifiants</h1>
+            <div class="motDePasse">
+              <label for="password">MOT DE PASSE</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="•••••••••••"
+                required
+              />
+            </div>
+
+            <div class="remember">
+              <input type="checkbox" id="checkbox" name="checkbox" />
+              <label for="checkbox">SE SOUVENIR DE MOI</label>
+            </div>
+
+            <div class="button">
+              <input type="submit" value="Connexion" id="button-connexion"/>
+            </div>
+          </form>
+        </div>
       </div>
-
-      <form action="" method="get" class="formulaire">
-        <div class="mail">
-          <label for="email">ADRESSE EMAIL</label>
-          <input type="email" id="email" name="email" placeholder="chuck@norris.com" required>
-        </div>
-
-        <div class="motDePasse">
-          <label for="password">MOT DE PASSE</label>
-          <input type="password" id="password" name="password" placeholder="•••••••••••" required>
-        </div>
-
-        <div class="remember">
-          <input type="checkbox" id="checkbox" name="checkbox">
-          <label for="checkbox">SE SOUVENIR DE MOI</label>
-        </div>
-
-        <div class="buttom">
-          <input type="submit" value="Connexion">
-        </div>
-
-      </form>
-    </div>
-  </section>
-
-  <section class="preview" data-content="challenge 4">
-    <img width="444px" src="img/objectif/login-form.png" alt="formulaire de connexion" />
-  </section>
-</body>
-
+    </section>
+<!-- 
+    <section class="preview" data-content="challenge 4">
+      <img
+        width="444px"
+        src="img/objectif/login-form.png"
+        alt="formulaire de connexion"
+      /> -->
+    </section>
+  </body>
 </html>

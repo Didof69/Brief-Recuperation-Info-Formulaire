@@ -1,40 +1,103 @@
 *,
 *::after,
 *::before {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
---background-card: #fff;
---background-learn: #f8f8f8;
---background-internal: #f3f4f5;
---box-shadow: 0 10px 29px rgba(0, 0, 0, 0.2);
---color-text: #172533;
---color-text-soft: #626e76;
---color-accent: #7c47c0;
+  --background-card: #fff;
+  --background-learn: #f8f8f8;
+  --background-internal: #f3f4f5;
+  --box-shadow: 0 10px 29px rgba(0, 0, 0, 0.2);
+  --color-text: #172533;
+  --color-text-soft: #626e76;
+  --color-accent: #7c47c0;
 }
 
-* {
+*{
 font-family: "Poppins";
 }
 
 .learn {
-background-color: #f7f7f7;
-display: flex;
-justify-content: center;
-align-items: center;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .card {
-background-color: white;
-box-shadow: inset 0 0 1em white, 0 0 1em rgb(225, 226, 226);
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: 380px;
-padding-left: 40px;
-font-weight: 700;  
-font-size: 14px;
-padding-bottom: 20px;
+  background-color: white;
+  box-shadow: inset 0 0 1em white, 0 0 1em rgb(225, 226, 226);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 380px;
 }
 
+.container {
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+
+.formulaire > div {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+.mail,
+.motDePasse {
+    display: flex;
+    flex-direction: column;
+}
+
+.mail > input,
+.motDePasse > input {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    height: 58px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.mail > label,
+.motDePasse > label {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#checkbox {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+
+.remember > label {
+    padding-left: 10px;
+}
+
+#button-connexion {
+    background-color: #7c47c0;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    height: 58px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+} 
